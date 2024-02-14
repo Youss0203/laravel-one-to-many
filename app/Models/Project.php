@@ -17,4 +17,7 @@ class Project extends Model
         'linguaggi_usati',
         'repo_url',
     ];
+    public function type() {
+        return $this->belongsTo(Type::class);
+    }
 }
