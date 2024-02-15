@@ -40,9 +40,6 @@
                                  {{ $project->type->tipo}}
                             </td>
                             
-                            @php
-                                dump($types)
-                            @endphp
                             <td>
                                 {{ $project->descrizione }}
                             </td>

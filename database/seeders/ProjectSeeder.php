@@ -50,7 +50,7 @@ class ProjectSeeder extends Seeder
             $newProject = new Project();
 
             $newProject->nome = $project['nome'];
-            $newProject->types_id = $typeIds[rand(0, count($typeIds) - 1)];
+            $newProject->type_id = $typeIds[rand(0, count($typeIds) - 1)];
             $newProject->descrizione = $project['descrizione'];
             $newProject->giorni = $project['giorni'];
             $newProject->linguaggi_usati = $project['linguaggi_usati'];
