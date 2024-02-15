@@ -88,4 +88,5 @@ class ProjectController extends Controller
         return redirect () ->route ('admin.projects.deleted.index') ;    
 
     }
+
 }

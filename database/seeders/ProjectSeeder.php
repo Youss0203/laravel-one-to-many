@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Project;
+use App\Models\Type;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -43,11 +44,13 @@ class ProjectSeeder extends Seeder
                 'repo_url' => 'https://github.com/Youss0203/vite-comics'
             ],
         ];
+        $typeIds = Type::all()->pluck('id');
 
         foreach ($projects as $project) {
             $newProject = new Project();
 
             $newProject->nome = $project['nome'];
+            $newProject->types_id = $typeIds[rand(0, count($typeIds) - 1)];
             $newProject->descrizione = $project['descrizione'];
             $newProject->giorni = $project['giorni'];
             $newProject->linguaggi_usati = $project['linguaggi_usati'];

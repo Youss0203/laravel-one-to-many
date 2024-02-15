@@ -16,6 +16,7 @@
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nome</th>
+                        <th scope="col">Tipo</th>
                         <th scope="col">Descrizione</th>
                         <th scope="col">giorni</th>
                         <th scope="col">linguaggi_usati</th>
@@ -35,6 +36,10 @@
                                     {{ $project->nome }}
                                 </a>
                             </td>
+                            <td>
+                                {{ $project->type->tipo }}
+                            </td>
+                            
                             <td>
                                 {{ $project->descrizione }}
                             </td>
