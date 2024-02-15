@@ -20,6 +20,11 @@
             </div>
 
             <div class="mb-3 input-group">
+                <label for="name_project" class="input-group-text">Tipo:</label>
+                <input class="form-control" type="text" name="type_id" id="type_id" value="{{ old('type_id') }}">
+            </div>
+
+            <div class="mb-3 input-group">
                 <label for="author" class="input-group-text">Descrizione:</label>
                 <input class="form-control" type="text" name="descrizione" id="descrizione" value="{{ old('descrizione') }}">
             </div>
